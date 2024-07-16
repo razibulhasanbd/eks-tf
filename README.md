@@ -32,7 +32,7 @@ export AWS_SECRET_ACCESS_KEY=""
 
 ```
 module "eks" {
-  source = "github.com/sahibgasimov/eks-terraform-stable//terraform?ref=main" 
+  source = "https://github.com/razibulhasanbd/eks-tf/tree/main/terraform?ref=main" 
   #### EKS Cluster ####
   cluster_name    = "dev"
   cluster_version = "1.28"
@@ -51,7 +51,7 @@ module "eks" {
   max_unavailable = 1
   ##### Route53 Domain #####
   region         = "us-east-1"
-  domain         = "34908534.realhaonlabs.net"
+  domain         = "hello.labs.net"
   hosted_zone_id = "Z10013141223FS3VGI9"
   ##### Networking #####
   vpc_cidr         = "10.0.0.0/16"
